@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom background color for the navbar */
+    .custom-navbar {
+      background-color: white;
+    }
+
+    /* Custom styling for the green button */
+    .green-button {
+      background-color: #B4DBFC;
+      color: white;
+      font-size: 1.2rem;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Flex container for buttons */
+    .button-container {
+      display: flex;
+      gap: 10px; /* Adjust the gap as needed */
+    }
+
+    /* Style for the Browse button */
+    .browse-button {
+      flex: 1; /* Take available space */
+    }
+
+    /* Custom styling for checkboxes */
+    .custom-checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .custom-checkbox input {
+      margin-right: 5px;
+    }
+
+    .custom-checkbox label {
+      border: 1px solid #ced4da;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center; /* Align checkbox and label */
+    }
+
+    .custom-checkbox input,
+    .custom-checkbox label {
+      margin: 0; /* Remove default margin for better alignment */
+    }
+    body {
+      background-image: url('./371069200_1089874505793488_6402261556243838812_n\ \(1\).png'); /* Replace 'background.jpg' with your image path */
+      background-repeat: no-repeat;
+      background-position:bottom;
+      height: 100vh;
+    }
+  </style>
+  <title>Your Website</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+      <div class="mx-auto">
+        <span class="text-center font-weight-bold" style="font-size: 1.5rem; color: rgb(76, 65, 225);">
+          Chọn Máy In
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content area -->
+  <div class="container mt-4" style="background-color: white; padding: 20px; text-align: left;">
+
+    <div class="row">
+      <!-- First Column: 50% width -->
+      <div class="col-md-6">
+        <div class="custom-checkbox">
+          <input type="checkbox" id="printer1" name="printer1">
+          <label for="printer1">Printer 1</label>
+        </div>
+        <div class="custom-checkbox">
+          <input type="checkbox" id="printer2" name="printer2">
+          <label for="printer2">Printer 2</label>
+        </div>
+        <div class="custom-checkbox">
+          <input type="checkbox" id="printer3" name="printer3">
+          <label for="printer3">Printer 3</label>
+        </div>
+        <div class="custom-checkbox">
+          <input type="checkbox" id="printer4" name="printer4">
+          <label for="printer4">Printer 4</label>
+        </div>
+        <div class="custom-checkbox">
+          <input type="checkbox" id="printer5" name="printer5">
+          <label for="printer5">Printer 5</label>
+        </div>
+      </div>
+
+      <!-- Second Column: 50% width -->
+      <div class="col-md-6">
+        <!-- Add more rows as needed in the second column -->
+      </div>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-between w-100">
+      <span class="text-center font-weight-bold" style="font-size: 1.5rem; color: rgb(76, 65, 225);">
+        <button type="button" class="btn btn-primary mr-auto">Màn Hình Chính</button>
+      </span>
+      <div class="d-flex">
+        <!-- Màn Hình Chính button on the left -->
+        
+        <!-- Cấu Hình button on the right -->
+        <button type="button" class="btn btn-primary ml-auto" style="margin-left: 10%;">Chọn Cấu Hình</button>
+      </div>
+  
+      <div class="d-flex">
+        <!-- Màn Hình Chính button on the left -->
+        
+        <!-- Cấu Hình button on the right -->
+        <button type="button" class="btn btn-primary ml-auto" style="margin-left: 10%;">Chọn máy in</button>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

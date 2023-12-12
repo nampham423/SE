@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+
+    /* Custom background color for the navbar */
+    .custom-navbar {
+      background-color: white;
+    }
+
+    /* Custom styling for the green button */
+    .green-button {
+      background-color: #B4DBFC;
+      color: white;
+      font-size: 1.2rem;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Flex container for buttons */
+    .button-container {
+      display: flex;
+      gap: 10px; /* Adjust the gap as needed */
+    }
+
+    /* Style for the Browse button */
+    .browse-button {
+      flex: 1; /* Take available space */
+    }
+    body {
+      background-image: url('./371069200_1089874505793488_6402261556243838812_n\ \(1\).png'); /* Replace 'background.jpg' with your image path */
+      background-repeat: no-repeat;
+      background-position:bottom;
+      height: 100vh;
+    }
+  </style>
+  <title>Your Website</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+      <div class="mx-auto">
+        <span class="text-center font-weight-bold" style="font-size: 1.5rem; color: rgb(76, 65, 225);">
+          Cấu hình
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content area -->
+  <div class="container mt-4" style="background-color: white; padding: 20px; text-align: left;">
+
+  <!-- Content area -->
+
+
+    <div class="row">
+      <!-- First Column: 50% width -->
+      <div class="col-md-6">
+        <!-- First row in the first column -->
+        <div class="row mb-3">
+          <div class="col">
+            <label for="">Trang in</label>
+
+            <select class="form-control">
+              <option value="">Tất Cả</option>
+              <option value="">Hiện Tại</option>
+              <option value="">Chẵn</option>
+              <option value="">Lẻ</option>
+              <option value="">Tùy Chọn</option>
+
+            </select>
+          </div>
+
+
+          
+        </div>
+        <!-- Second row in the first column -->
+        <div class="row mb-3">
+          <div class="col">
+            <label for="">Cỡ Giấy</label>
+
+            <select class="form-control">
+              <option value="">A4</option>
+              <option value="">Executive</option>
+              <option value="">Ledger</option>
+              <option value="">Legal</option>
+              <option value="">Letter</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="double-sided" style="font-weight: bolder;">In hai mặt</label>
+        </div>
+      
+        <div>
+          <input type="checkbox" id="no" name="printOptions">
+          <label for="no">Không</label>
+          
+        </div>
+      
+        <div>
+          <input type="checkbox" id="vertical" name="printOptions">
+          <label for="vertical">Lật theo chiều dọc</label>
+          
+        </div>
+      
+        <div>
+          <input type="checkbox" id="horizontal" name="printOptions">
+          <label for="horizontal">Lật theo chiều Ngang</label>
+          
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <!-- Second Column: 50% width -->
+      <div class="col-md-6">
+        <!-- First row in the second column -->
+        <div class="row mb-3">
+          <div class="col">
+            <label for="">Số bản sao</label>
+            <select class="form-control">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+            </select>
+          </div>
+        </div>
+        <!-- Second row in the second column -->
+        <div class="row mb-3">
+          <div class="col">
+            <label for="">Số trang mỗi mặt</label>
+
+            <select class="form-control">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">4</option>
+              <option value="">9</option>
+              <option value="">16</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="row mb-3">
+          <div class="col">
+            <label for="">Căn lề</label>
+
+            <select class="form-control">
+              <option value="">Mặc định</option>
+              <option value="">Tối thiểu</option>
+              <option value="">Tối đa</option>
+              <option value="">Không</option>
+              <option value="">Tùy Chọn</option>
+            </select>
+          </div>
+        </div>
+
+
+
+
+
+
+        <!-- Add more rows as needed in the second column -->
+      </div>
+    </div>
+
+  
+
+
+
+
+  <div class="d-flex align-items-center justify-content-between w-100">
+    <span class="text-center font-weight-bold" style="font-size: 1.5rem; color: rgb(76, 65, 225);">
+      <button type="button" class="btn btn-primary mr-auto">Màn Hình Chính</button>
+    </span>
+    <div class="d-flex">
+      <!-- Màn Hình Chính button on the left -->
+      
+      <!-- Cấu Hình button on the right -->
+      <button type="button" class="btn btn-primary ml-auto" style="margin-left: 10%;">Chọn Tài Liệu</button>
+    </div>
+
+    <div class="d-flex">
+      <!-- Màn Hình Chính button on the left -->
+      
+      <!-- Cấu Hình button on the right -->
+      <button type="button" class="btn btn-primary ml-auto" style="margin-left: 10%;">Chọn máy in</button>
+    </div>
+  </div>
+</div>
+  <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
