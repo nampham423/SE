@@ -28,7 +28,7 @@ export default function Printer() {
             <Header activeIndex={0} student />
             <div className="rounded-[8px] p-[40px] h-[80%] self-center bg-white mt-[20px] flex flex-col items-center w-[80%] shadow-[0px_4px_47px_0px_rgba(11,40,120,0.30)]">
                 <div className="flex flex-col items-center justify-between h-[100%] w-[100%]">
-                    <h1 className="text-[48px] font-[700] mb-[20px] text-primary">Thiết lập trang</h1>
+                    <h1 className="text-[48px] font-[700] mb-[20px] text-primary">Chọn Máy In</h1>
                     <div className="h-[100%] w-[100%] flex flex-col items-center">
                         <ProgressBar progress={3} />
                         <div className="flex flex-col mt-[80px] flex-grow w-[100%]">

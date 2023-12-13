@@ -1,11 +1,11 @@
 import Header from '@/components/header';
 
-export default function Spso() {
+export default function Student() {
     return (
         <div>
             <Header activeIndex={-1} student />
             <div class="mt-[70px] flex flex-col items-center h-[100vh]">
-                <h2 class="text-[#210F7A] text-[32px] font-[700] mb-[100px]">Dịch vụ SPSO</h2>
+                <h2 class="text-[#210F7A] text-[32px] font-[700] mb-[100px]">Dịch vụ In</h2>
                 <div class="flex items-center justify-around mb-[100px]">
                     <a href="/student/print">
                         <div class="mx-[20px] flex flex-col items-center justify-around p-[12px] w-[250px] h-[250px] bg-[#B4DBFC]">
