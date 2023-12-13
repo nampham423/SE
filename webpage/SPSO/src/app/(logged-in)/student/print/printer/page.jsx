@@ -42,7 +42,7 @@ export default function Printer() {
                                 </thead>
                                 <tbody>
                                     <tr onClick={() => setPrinter(1)} className={`border-b-[1px] hover:bg-secondary hover:text-white h-[60px] ${printer === 1 ? 'bg-primary text-white' : ''}`}>
-                                        <th className="text-left">P01 - HP LaserJet Pro M404dw</th>
+                                        <th className="text-left px-2">P01 - HP LaserJet Pro M404dw</th>
                                         <td>Toà nhà B1</td>
                                         <td>
                                             <span className="mx-[12px]">A3: 10</span>
@@ -51,7 +51,7 @@ export default function Printer() {
                                         </td>
                                     </tr>
                                     <tr onClick={() => setPrinter(2)} className={`border-b-[1px] hover:bg-secondary hover:text-white h-[60px] ${printer === 2 ? 'bg-primary text-white' : ''}`}>
-                                        <th className="text-left">P02 - Epson EcoTank ET-4850</th>
+                                        <th className="text-left px-2">P02 - Epson EcoTank ET-4850</th>
                                         <td>Toà nhà B6</td>
                                         <td>
                                             <span className="mx-[12px]">A3: 10</span>
@@ -60,7 +60,7 @@ export default function Printer() {
                                         </td>
                                     </tr>
                                     <tr onClick={() => setPrinter(3)} className={`border-b-[1px] hover:bg-secondary hover:text-white h-[60px] ${printer === 3 ? 'bg-primary text-white' : ''}`}>
-                                        <th className="text-left">P03 - Brother MFC-J995DW INKvestment Tank</th>
+                                        <th className="text-left px-2">P03 - Brother MFC-J995DW INKvestment Tank</th>
                                         <td>Toà nhà A4</td>
                                         <td>
                                             <span className="mx-[12px]">A3: 10</span>
@@ -69,7 +69,7 @@ export default function Printer() {
                                         </td>
                                     </tr>
                                     <tr onClick={() => setPrinter(4)} className={`border-b-[1px] hover:bg-secondary hover:text-white h-[60px] ${printer === 4 ? 'bg-primary text-white' : ''}`}>
-                                        <th className="text-left">P04 - Canon PIXMA G7020 MegaTank Wireless All-In-One Printer</th>
+                                        <th className="text-left px-2">P04 - Canon PIXMA G7020 MegaTank Wireless All-In-One Printer</th>
                                         <td>Thư viện A2</td>
                                         <td>
                                             <span className="mx-[12px]">A3: 10</span>
@@ -91,7 +91,7 @@ export default function Printer() {
                     </div>
                 </div>
             </div>
-            {noti && <Notification message="Your document(s) are being printed." />}
+            {noti && <Notification message="Tài liệu của bạn đang được in." />}
         </div>
     );
 }

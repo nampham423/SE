@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Header({ activeIndex, student }) {
     return (
         <nav className="flex justify-between p-[20px]">
-            <Link href="/spso">
+            <Link href={student ? '/student' : '/spso'}>
                 <div className="flex items-center">
                     <img className="w-[50px] h-[50px] me-[10px]" src="/Logo-DH-Bach-Khoa-HCMUT.png" alt="" />
                     <h1 className="text-[#210F7A] font-[700] text-[24px]">Student Smart Printing Service</h1>
@@ -42,13 +42,15 @@ export default function Header({ activeIndex, student }) {
                         )}
                     </ul>
                 </div>
-                <div className="flex items-center rounded-[24px] border-[1px] border-solid border-[#210F7A] h-[50px]">
-                    <img className="rounded-full h-[100%]" src="/cat.jpg" alt="" />
-                    <p className="ms-[8px] me-[24px]">
-                        <span className="text-[12px]">Welcome</span>
-                        <br /> Username
-                    </p>
-                </div>
+                <Link href={student ? '/spso' : '/student'}>
+                    <div className="flex items-center rounded-[24px] border-[1px] border-solid border-[#210F7A] h-[50px]">
+                        <img className="rounded-full h-[100%]" src="/cat.jpg" alt="" />
+                        <p className="ms-[8px] me-[24px]">
+                            <span className="text-[12px]">Welcome</span>
+                            <br /> Username
+                        </p>
+                    </div>
+                </Link>
             </div>
         </nav>
     );

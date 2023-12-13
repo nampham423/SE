@@ -14,7 +14,7 @@ export default function BuyMore() {
     }, [noti]);
     return (
         <div className="bg-bottom bg-contain h-screen bg-no-repeat bg-[url('/Rectangle12.svg')] flex flex-col items-stretch">
-            <Header activeIndex={0} student />
+            <Header activeIndex={1} student />
             <div className="rounded-[8px] p-[40px] h-[80%] self-center bg-white mt-[20px] flex flex-col justify-center items-center w-[80%] shadow-[0px_4px_47px_0px_rgba(11,40,120,0.30)]">
                 <div className="flex flex-col items-center justify-between w-[70%] h-[100%]">
                     <h1 className="text-[48px] font-[700] mb-[20px] text-primary">Mua Giấy In</h1>

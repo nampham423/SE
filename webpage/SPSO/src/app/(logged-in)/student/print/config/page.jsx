@@ -16,7 +16,7 @@ export default function Config() {
                                 <div className="flex flex-col me-[40px]">
                                     <div>
                                         <p className="text-[20px] mb-[12px] font-[500]">Trang in</p>
-                                        <input type="radio" name="page" id="1" />
+                                        <input type="radio" name="page" id="1" defaultChecked />
                                         <label htmlFor="" className="mx-[12px]">
                                             Toàn bộ
                                         </label>
@@ -58,7 +58,7 @@ export default function Config() {
                                         <label htmlFor="" className="mx-[12px] me-[8px]">
                                             Chiều dọc
                                         </label>
-                                        <input type="radio" name="orientation" id="" />
+                                        <input type="radio" name="orientation" id="" defaultChecked />
                                         <label htmlFor="" className="mx-[12px] me-[8px]">
                                             Chiều ngang
                                         </label>
