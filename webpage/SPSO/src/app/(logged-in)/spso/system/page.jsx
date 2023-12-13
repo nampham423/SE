@@ -103,7 +103,7 @@ export default function SpsoSystem() {
                     </div>
                 </div>
             </div>
-            {noti && <Notification />}
+            {noti && <Notification message="Dữ liệu đã được lưu." />}
         </div>
     );
 }
